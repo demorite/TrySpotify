@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "authors": [
+    "Dylan CHAMOULAUD <dylan3396@hotmail.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
