@@ -1,0 +1,12 @@
+@import "variables";
+
+.bottom_controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: $gray2;
+  @import "bottom_part_left";
+  @import "bottom_part_center";
+  @import "bottom_part_right";
+}

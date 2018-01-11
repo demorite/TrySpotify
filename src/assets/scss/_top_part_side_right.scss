@@ -1,0 +1,63 @@
+@import "variables";
+
+.side_right {
+  padding: 10px;
+  width: 250px;
+  hr {
+    margin: 15px 0
+  }
+  .friend_card {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .avatar {
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%
+    }
+    .center_infos {
+      flex: 1;
+      padding: 0 10px;
+      .song_title {
+        font-size: 11px;
+        color: #949494;
+        margin-top: 7px;
+      }
+      .artist_name {
+        @extend .song_title;
+        margin-top: 3px;
+      }
+      .album_name {
+        @extend .song_title;
+        position: relative;
+        padding-left: 25px;
+        margin-top: 12px;
+        &:before {
+          content: '\f1db';
+          font-family: FontAwesome, serif;
+          position: absolute;
+          top: 4px;
+          left: 6px;
+          font-size: 6px;
+        }
+        &:after {
+          content: '\f1db';
+          font-family: FontAwesome, serif;
+          position: absolute;
+          top: -4px;
+          left: 0;
+          font-size: 20px;
+        }
+      }
+    }
+    .time {
+      height: 100%;
+      align-self: flex-start;
+      color: gray;
+    }
+  }
+}

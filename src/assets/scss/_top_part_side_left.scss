@@ -1,0 +1,68 @@
+@import "variables";
+
+.side_left {
+  padding: 15px;
+  color: #a2a2a2;
+  overflow-y: auto;
+  ul {
+    li {
+      transition: all 200ms;
+      cursor: pointer;
+      &:hover {
+        color: #dedede;
+      }
+      &.active {
+        color: white;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          top: calc(50% - 1em);
+          left: -15px;
+          height: 2em;
+          width: 5px;
+          background-color: #00DA5A;
+        }
+      }
+    }
+  }
+  & > div {
+    padding-bottom: 25px;
+  }
+  .main_buttons {
+    font-weight: bold
+  }
+  .window_controls {
+    display: flex;
+    & > div {
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      font-size: 8px;
+      margin: 0 8px 0 0;
+      color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 400ms;
+      cursor: pointer;
+    }
+    & > :hover {
+      color: #1d1d1d;
+    }
+    & > :nth-child(1) {
+      background-color: rgb(255, 102, 105);
+    }
+    & > :nth-child(2) {
+      background-color: #dab800;
+    }
+    & > :nth-child(3) {
+      background-color: #00ca00;
+    }
+  }
+  .library {
+    ul {
+      font-weight: bold;
+    }
+  }
+}

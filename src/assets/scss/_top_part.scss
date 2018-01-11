@@ -1,0 +1,8 @@
+@import "variables";
+
+.top_part_container {
+  display: flex;
+  @import "top_part_side_left";
+  @import "top_part_center";
+  @import "top_part_side_right";
+}

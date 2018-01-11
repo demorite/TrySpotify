@@ -62,35 +62,38 @@ class Main extends React.Component {
                         <h1>Vos Daily Mix</h1>
                         <h2>Ecoutez la musique que vous aimez sans le moindre effort. Un florilège de vos titres préférés et de nouvelles perles</h2>
                         <hr/>
-                        <div className="song_card">
-                            <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
-                            <div className="song_title">Daily mix 1</div>
-                            <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
-                            <div className="extras">Concocté pour Dylan</div>
-                        </div>
-                        <div className="song_card">
-                            <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
-                            <div className="song_title">Daily mix 1</div>
-                            <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
-                            <div className="extras">Concocté pour Dylan</div>
-                        </div>
-                        <div className="song_card">
-                            <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
-                            <div className="song_title">Daily mix 1</div>
-                            <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
-                            <div className="extras">Concocté pour Dylan</div>
-                        </div>
-                        <div className="song_card">
-                            <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
-                            <div className="song_title">Daily mix 1</div>
-                            <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
-                            <div className="extras">Concocté pour Dylan</div>
-                        </div>
-                        <div className="song_card">
-                            <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
-                            <div className="song_title">Daily mix 1</div>
-                            <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
-                            <div className="extras">Concocté pour Dylan</div>
+                        <br/>
+                        <div className="song_cards">
+                            <div className="song_card">
+                                <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
+                                <div className="song_title">Daily mix 1</div>
+                                <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
+                                <div className="extras">Concocté pour Dylan</div>
+                            </div>
+                            <div className="song_card">
+                                <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
+                                <div className="song_title">Daily mix 1</div>
+                                <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
+                                <div className="extras">Concocté pour Dylan</div>
+                            </div>
+                            <div className="song_card">
+                                <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
+                                <div className="song_title">Daily mix 1</div>
+                                <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
+                                <div className="extras">Concocté pour Dylan</div>
+                            </div>
+                            <div className="song_card">
+                                <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
+                                <div className="song_title">Daily mix 1</div>
+                                <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
+                                <div className="extras">Concocté pour Dylan</div>
+                            </div>
+                            <div className="song_card">
+                                <div className="song_image"><img src={`https://picsum.photos/200?random&${Math.random()}`} alt="song_image"/></div>
+                                <div className="song_title">Daily mix 1</div>
+                                <div className="song_description">Nick Phoenix, Anti Martikkainen, Erik Erkholm et bien d'autres</div>
+                                <div className="extras">Concocté pour Dylan</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,7 +135,7 @@ class Main extends React.Component {
                     <div className="top">
                         <i className="fa fa-heart-o"/>
                         <i className="fa fa-fast-backward"/>
-                        <i className="fa fa-play-circle-o"/>
+                        <i className="fa fa-play"/>
                         <i className="fa fa-fast-forward"/>
                         <i className="fa fa-ban fa-flip-vertical"/>
                     </div>

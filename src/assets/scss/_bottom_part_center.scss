@@ -1,0 +1,46 @@
+@import "variables";
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .top {
+    display: flex;
+    color: #adadad;
+    i {
+      cursor: pointer;
+      margin: 0 15px;
+      font-size: 18px;
+
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    color: #9c9c9c;
+    font-size: 12px;
+    margin-top: 10px;
+    align-items: center;
+    .time_bar {
+      background-color: #404040;
+      flex: 1px;
+      height: 7px;
+      margin: 0 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      .current_time_bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10%;
+        background-color: #a4a4a4;
+        border-radius: 50px;
+      }
+    }
+  }
+}

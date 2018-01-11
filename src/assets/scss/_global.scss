@@ -1,0 +1,64 @@
+@import "variables";
+
+body {
+  background-color: $bg-color;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 30px;
+  margin: 5px 0 0 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+hr {
+  border-color: #424242;
+}
+
+h4 {
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: $bg-color;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: $bg-color;
+
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  border: 3px solid $bg-color;
+  background-color: #6a6a6a;
+}

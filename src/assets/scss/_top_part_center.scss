@@ -1,0 +1,147 @@
+@import "variables";
+
+.center_container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  .top_bar {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      display: flex;
+    }
+    .left_part {
+      .history_controls {
+        display: flex;
+        align-items: center;
+        & > div {
+          cursor: pointer;
+          color: gray;
+          transition: all 200ms;
+          &:hover {
+            color: white;
+          }
+          &.deactivate {
+            i {
+              color: gray;
+            }
+          }
+        }
+        i {
+          font-size: 30px;
+          margin-right: 20px;
+        }
+      }
+      .search_box {
+        display: flex;
+        align-items: center;
+        position: relative;
+        i {
+          font-size: 14px;
+          padding: 0 0 0 7px;
+          position: absolute;
+          color: black;
+        }
+        input {
+          padding: 5px 10px 5px 26px;
+          border-radius: 100px;
+          border: none;
+          color: black;
+          &::placeholder {
+            color: black
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .right_part {
+      display: flex;
+      align-items: center;
+      & > div {
+        margin-left: 15px;
+      }
+      .avatar {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 30px;
+        width: 30px;
+      }
+      .username {
+        cursor: pointer;
+      }
+      .options {
+        font-size: 25px;
+        i {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .playlists_lists {
+    padding: 50px 0 0 0;
+    .song_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .song_card {
+        width: calc(25% - 15px);
+        margin-bottom: 60px;
+        box-sizing: border-box;
+
+        &:hover {
+          .song_image {
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+
+        .song_image {
+          width: 100%;
+          position: relative;
+          cursor: pointer;
+
+          &:before {
+            content: "\f04b";
+            font-family: FontAwesome, sans-serif;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-weight: 100;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.77);
+            transition: all 400ms;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .song_title {
+          margin: 10px 0;
+        }
+        .song_description {
+          color: #979797;
+          line-height: 20px;
+        }
+        .extras {
+          color: gray;
+          font-weight: 100;
+          text-transform: uppercase;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

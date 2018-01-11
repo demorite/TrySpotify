@@ -1,0 +1,2 @@
+.left{display:flex;align-items:center;justify-content:space-between}.left .avatar{display:flex;align-items:center;justify-content:center;width:50px;height:50px;overflow:hidden}.left .infos{padding:0 10px;line-height:22px}.left .infos .artist{color:#8d8d8d}.left .add_to_favorites{color:#8d8d8d;font-size:20px;align-self:flex-start;transform:translateY(5px);cursor:pointer}
+/*# sourceMappingURL=_bottom_part_left.css.map */
