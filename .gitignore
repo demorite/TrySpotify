@@ -110,3 +110,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+/.gulp-scss-cache/
+/.sass-cache/
