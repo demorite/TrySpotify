@@ -5,7 +5,6 @@ import middlewares from './middlewares'
 const reducer = combineReducers(reducers)
 
 const enhancer =  compose(
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), 
     applyMiddleware(...middlewares)
 );
 
